@@ -1,8 +1,10 @@
-import '../styles/index.scss'
-import '../styles/globals.scss'
+import { AppProps } from 'next/dist/next-server/lib/router/router';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import '../styles/index.scss';
+import '../styles/globals.scss';
+
+function MyApp({ Component, pageProps }: AppProps): any {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
